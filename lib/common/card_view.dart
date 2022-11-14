@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
+import '../pages/detail_page.dart';
 import 'colors.dart';
 
 class CardView extends StatefulWidget {
@@ -20,7 +21,12 @@ class _CardViewState extends State<CardView> {
       shrinkWrap: true,
       children: [
         InkWell(
-          onTap: () {},
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const DetailPage()),
+            );
+          },
           child: Padding(
             padding: const EdgeInsets.only(bottom: 12),
             child: SizedBox(
