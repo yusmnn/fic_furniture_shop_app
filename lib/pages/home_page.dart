@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../common/bottom_navbar.dart';
+import '../common/category.dart';
 import '../common/colors.dart';
 
 class HomePage extends StatefulWidget {
@@ -72,99 +73,7 @@ class _HomePageState extends State<HomePage> {
             const SizedBox(
               height: 30,
             ),
-            SizedBox(
-              height: 33,
-              child: ListView(
-                scrollDirection: Axis.horizontal,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(right: 4),
-                    child: InkWell(
-                      onTap: () {},
-                      child: Container(
-                        height: 33,
-                        width: 70,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          color: backgroundCategory,
-                        ),
-                        child: const Center(
-                          child: Text("All"),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(right: 4),
-                    child: InkWell(
-                      onTap: () {
-                        backgroundCategory;
-                      },
-                      child: Container(
-                        height: 33,
-                        width: 100,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                        ),
-                        child: const Center(
-                          child: Text("Living Room"),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(right: 4),
-                    child: InkWell(
-                      onTap: () {
-                        backgroundCategory;
-                      },
-                      child: Container(
-                        height: 33,
-                        width: 100,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                        ),
-                        child: const Center(
-                          child: Text("Bedroom"),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(right: 4),
-                    child: InkWell(
-                      onTap: () {},
-                      child: Container(
-                        height: 33,
-                        width: 100,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                        ),
-                        child: const Center(
-                          child: Text("Dining room"),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(right: 4),
-                    child: InkWell(
-                      onTap: () {},
-                      child: Container(
-                        height: 33,
-                        width: 100,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                        ),
-                        child: const Center(
-                          child: Text("Kitchen room"),
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
+            const CategoryView(),
             const SizedBox(
               height: 37,
             ),
