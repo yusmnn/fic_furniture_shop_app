@@ -1,7 +1,7 @@
 import 'package:fic_furniture_shop_app/common/card_view.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
+import '../common/appbar.dart';
 import '../common/bottom_navbar.dart';
 import '../common/category.dart';
 import '../common/colors.dart';
@@ -17,39 +17,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: background,
-        elevation: 0,
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            InkWell(
-              onTap: () {},
-              child: SvgPicture.asset(
-                'assets/icons/hamburger.svg',
-                color: iconAppBar,
-              ),
-            ),
-            Text(
-              "HOME",
-              style: TextStyle(
-                color: iconAppBar,
-                fontSize: 16,
-                fontFamily: "Poppins",
-                fontWeight: FontWeight.w600,
-                fontStyle: FontStyle.normal,
-                letterSpacing: 1,
-              ),
-            ),
-            InkWell(
-              onTap: () {},
-              child: SvgPicture.asset(
-                'assets/icons/search.svg',
-                color: iconAppBar,
-              ),
-            ),
-          ],
-        ),
+      appBar: const PreferredSize(
+        preferredSize: Size.fromHeight(48),
+        child: AppBarView(),
       ),
       backgroundColor: background,
       body: Padding(
