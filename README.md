@@ -1,5 +1,5 @@
 # Furniture_Apps
-Fic FUGI Tugas 1
+Fic FUGI Tugas slicing UI
 ## ScreenShot
 
 | Home Page        | Detail Page    |
