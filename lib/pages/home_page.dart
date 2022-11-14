@@ -196,11 +196,11 @@ class _HomePageState extends State<HomePage> {
           BottomNavigationBarItem(
             icon: const Text('Home'),
             activeIcon: Container(
-              decoration: const BoxDecoration(
-                borderRadius: BorderRadius.all(
+              decoration: BoxDecoration(
+                borderRadius: const BorderRadius.all(
                   Radius.circular(14.0),
                 ),
-                color: Color(0xff9A9390),
+                color: backgroundCategory,
               ),
               padding: const EdgeInsets.all(10.0),
               child: SvgPicture.asset(
