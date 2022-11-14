@@ -2,6 +2,7 @@ import 'package:fic_furniture_shop_app/common/card_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../common/bottom_navbar.dart';
 import '../common/colors.dart';
 
 class HomePage extends StatefulWidget {
@@ -188,55 +189,7 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: backgroundBottomBar,
-        elevation: 0,
-        type: BottomNavigationBarType.fixed,
-        items: [
-          BottomNavigationBarItem(
-            icon: const Text('Home'),
-            activeIcon: Container(
-              decoration: BoxDecoration(
-                borderRadius: const BorderRadius.all(
-                  Radius.circular(14.0),
-                ),
-                color: backgroundCategory,
-              ),
-              padding: const EdgeInsets.all(10.0),
-              child: SvgPicture.asset(
-                'assets/icons/home_bar.svg',
-                color: iconBottomBar,
-                fit: BoxFit.fill,
-              ),
-            ),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: SvgPicture.asset(
-              'assets/icons/purchase_bar.svg',
-              color: iconBottomBar,
-              fit: BoxFit.fill,
-            ),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: SvgPicture.asset(
-              'assets/icons/star_bar.svg',
-              color: iconBottomBar,
-              fit: BoxFit.fill,
-            ),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: SvgPicture.asset(
-              'assets/icons/user_bar.svg',
-              color: iconBottomBar,
-              fit: BoxFit.fill,
-            ),
-            label: '',
-          ),
-        ],
-      ),
+      bottomNavigationBar: const BottomNavBar(),
     );
   }
 }
