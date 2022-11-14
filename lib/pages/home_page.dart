@@ -6,6 +6,7 @@ import '../common/bottom_navbar.dart';
 import '../common/category.dart';
 import '../common/colors.dart';
 import '../common/quotes_text.dart';
+import '../common/recommended_text.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -26,33 +27,20 @@ class _HomePageState extends State<HomePage> {
       body: Padding(
         padding: const EdgeInsets.fromLTRB(14, 14, 0, 0),
         child: Column(
-          children: [
-            const QuotesText(),
-            const SizedBox(
+          children: const [
+            QuotesText(),
+            SizedBox(
               height: 30,
             ),
-            const CategoryView(),
-            const SizedBox(
+            CategoryView(),
+            SizedBox(
               height: 37,
             ),
-            Align(
-              alignment: Alignment.centerLeft,
-              child: Text(
-                "Recommended Furnitures",
-                style: TextStyle(
-                  color: recommended,
-                  fontFamily: "Poppins",
-                  fontSize: 16,
-                  fontWeight: FontWeight.w500,
-                  fontStyle: FontStyle.normal,
-                  letterSpacing: 1,
-                ),
-              ),
-            ),
-            const SizedBox(
+            RecommendedText(),
+            SizedBox(
               height: 18,
             ),
-            const CardView(),
+            CardView(),
           ],
         ),
       ),
