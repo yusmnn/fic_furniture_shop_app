@@ -5,6 +5,7 @@ import '../common/appbar.dart';
 import '../common/bottom_navbar.dart';
 import '../common/category.dart';
 import '../common/colors.dart';
+import '../common/quotes_text.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -26,20 +27,7 @@ class _HomePageState extends State<HomePage> {
         padding: const EdgeInsets.fromLTRB(14, 14, 0, 0),
         child: Column(
           children: [
-            Align(
-              alignment: Alignment.centerLeft,
-              child: Text(
-                "Discover the most\nmodern furniture",
-                style: TextStyle(
-                  color: iconAppBar,
-                  fontFamily: "Poppins",
-                  fontSize: 22,
-                  fontWeight: FontWeight.w500,
-                  fontStyle: FontStyle.normal,
-                  letterSpacing: 1,
-                ),
-              ),
-            ),
+            const QuotesText(),
             const SizedBox(
               height: 30,
             ),
