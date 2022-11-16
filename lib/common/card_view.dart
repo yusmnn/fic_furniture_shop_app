@@ -131,7 +131,12 @@ class _CardViewState extends State<CardView> {
           ),
         ),
         InkWell(
-          onTap: () {},
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const DetailPage()),
+            );
+          },
           child: Padding(
             padding: const EdgeInsets.only(bottom: 8),
             child: SizedBox(
@@ -236,7 +241,12 @@ class _CardViewState extends State<CardView> {
           ),
         ),
         InkWell(
-          onTap: () {},
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const DetailPage()),
+            );
+          },
           child: Padding(
             padding: const EdgeInsets.only(bottom: 8),
             child: SizedBox(
@@ -341,7 +351,12 @@ class _CardViewState extends State<CardView> {
           ),
         ),
         InkWell(
-          onTap: () {},
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const DetailPage()),
+            );
+          },
           child: Padding(
             padding: const EdgeInsets.only(bottom: 8),
             child: SizedBox(
